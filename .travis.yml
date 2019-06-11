@@ -6,4 +6,4 @@ before_install:
     - docker build -t dvaqueiro/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run dvaqueiro/docker-react npm run test -- --coverage
+    - docker run -e CI=true dvaqueiro/docker-react npm run test -- --coverage
