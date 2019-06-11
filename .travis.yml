@@ -1,6 +1,6 @@
-sudo: require
+sudo: required
 services:
-    -docker
+    - docker
 
 before_install:
     - docker build -t dvaqueiro/docker-react -f Dockerfile.dev .
